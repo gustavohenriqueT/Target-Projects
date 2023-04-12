@@ -1,0 +1,18 @@
+int INDICE = 13, SOMA = 0, K = 0;
+
+enquanto K < INDICE faça
+
+{
+
+K = K + 1;
+
+SOMA = SOMA + K;
+
+}
+
+imprimir(SOMA);
+
+O valor da variável SOMA será 91.
+
+Este código apresentado é um laço de repetição que soma os números inteiros de 1 até INDICE, que é igual a 13. 
+O laço continua a somar os números enquanto K for menor que 13.
