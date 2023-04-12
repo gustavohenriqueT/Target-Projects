@@ -1,0 +1,38 @@
+Dois veículos (um carro e um caminhão) saem respectivamente de cidades opostas pela mesma rodovia. O carro de Ribeirão Preto em direção a Franca, 
+a uma velocidade constante de 110 km/h e o caminhão de Franca em direção a Ribeirão Preto a uma velocidade constante de 80 km/h. 
+Quando eles se cruzarem na rodovia, qual estará mais próximo a cidade de Ribeirão Preto?
+
+IMPORTANTE:
+
+a) Considerar a distância de 100km entre a cidade de Ribeirão Preto <-> Franca.
+b) Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mais para passar 
+em cada um deles e o carro possui tag de pedágio (Sem Parar)
+c) Explique como chegou no resultado.
+
+Distância que cada um percorre até o ponto de cruzamento:
+O carro percorre 50 km (metade da distância) a uma velocidade de 110 km/h. Então, o tempo que ele leva é:
+tempcar = d / velcar
+tempcar = 50 km / 110 km/h
+tempcar =(aproximadamente) 27 min ou 0,45hr
+
+O caminhão percorre 50 km (metade da distância) a uma velocidade de 80 km/h. Mas, como ele leva 5 minutos (ou 0,0833 horas) a mais em cada um dos dois pedágios, 
+precisamos adicionar esse tempo total ao tempo de viagem. Então, o tempo que ele leva é:
+tempcaminhão = (d / velcaminhão) + 2 * 0,0833hr
+tempcaminhão = (50 km / 80 km/h) + 2 * 0,0833hr
+tempcaminhão =(aproximadamente) 42 min ou 0,70hr
+
+Agora podemos somar os tempos para obter o tempo total até o cruzamento:
+temptotal = tempcarro + tempcaminhão
+temptotal = 0,4545hr + 0,7083hr
+temptotal = 1,1628hr
+
+Sabendo o tempo total, podemos calcular a distância que cada um está da cidade de Ribeirão Preto no momento do cruzamento:
+O carro está a uma distância de:
+distcarro = velcarro * tempcarro
+distcarro = 110 km/h * 0,4545hr
+distcarro = 50 km
+
+O caminhão está a uma distância de:
+distcaminhão = d - distcarro
+distcaminhão = 100 km - 50 km
+distcaminhão = 50 km
